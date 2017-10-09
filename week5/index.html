@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>WEEK5</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body id="home">
+	<h1>MMP 310</h1>
+
+	<ul>
+		<li class="link">Home</li>
+		<li class="link"><a href="week5/index.html">week5</a></li>
+	</ul>
+
+    
+</body>
+    
+    
+<body> <form name="passgen">
+        <input type="text" name="output">
+        <input type="button" value="Generate Password" onclick="populateform(this.form.theLength.value)">
+        <br> <b>Password Length:</b> <input type="text" name="theLength" value="10">
+</form>
+    
+<script>
+    var keylist="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789"
+    var temp=''
+    function genpass(pLength) {
+        temp=''
+        for (i=0; i<pLength;i++)
+            temp+=keylist.charAt(Math.floor(Math.random()*keylist.length))
+            return temp
+    }
+  function populateform(enterLength) {
+      document.passgen.output.value = genpass(enterLength)
+  }  
+</script>    
+    </body>
+</html>

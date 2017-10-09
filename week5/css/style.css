@@ -1,0 +1,46 @@
+body {
+	font-size: 14px;
+	background-color: #4b8f8c;
+	color:#4b8f8c;
+}
+#home {
+	color: #4b8f8c;
+	background: #484d6d;
+	font-size: 18px;
+}
+a {
+	color: aliceblue;
+	transition: color 500ms;
+}
+a:hover {
+	color: darkgoldenrod;
+}
+a:active {
+	color: #6d72c3;
+}
+
+h1 {
+	margin:0;
+}
+ul {
+	padding:0;
+}
+ul a {
+	color: aqua;
+}
+li {
+	border: 2px dotted;
+	margin: 0.25em 1em;
+	display:inline;
+}
+p { position:relative; }
+img {
+	width: 100%;
+	top: 100px;
+	position: fixed;
+	transition: all 1s;
+}
+img:hover {
+	width:200%;
+	top: 600px;
+}
